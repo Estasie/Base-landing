@@ -12,6 +12,74 @@
 
 <body>
     <main>
+        <div class="formContainer hidden">
+            <form action="#" class="form">
+                <button class="closeForm"> <span class="closeButton">x</span></button>
+                <p class="formHeader">Укажите необходимую информацию</p>
+                <div class="formItems">
+                    <div class="formItem checkboxContainer">
+                        <div class="formImgContainer">
+                            <img src="./img/houses/onefloor.png" alt="one floor" class="formImg">
+                        </div>
+                        <div class="itemDescr">
+                            <p class="itemHeader">Одноэтажный гостевой домик</p>
+                            <div class="services">
+                                <p>2-3 человека</p>
+                                <p>Две односпальные кровати, кухня, туалет, душевая, телевизор, Wi-fi</p>
+                                <p>1200 р./ сутки</p>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" id="oneFloorsHouse" />
+                    </div>
+                    <div class="formItem checkboxContainer">
+                        <div class="formImgContainer">
+                            <img src="./img/houses/onefloor.png" alt="one floor" class="formImg">
+                        </div>
+
+                        <div class="itemDescr">
+                            <p class="itemHeader">Одноэтажный гостевой домик</p>
+                            <div class="services">
+                                <p>2-3 человека</p>
+                                <p>Две односпальные кровати, кухня, туалет, душевая, телевизор, Wi-fi</p>
+                                <p>1200 р./ сутки</p>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" id="twoFloorsHouse" />
+                    </div>
+                    <div class="formItem checkboxContainer">
+                        <div class="formImgContainer">
+                            <img src="./img/houses/onefloor.png" alt="one floor" class="formImg">
+                        </div>
+                        <div class="itemDescr">
+                            <p class="itemHeader">Одноэтажный гостевой домик</p>
+                            <div class="services">
+                                <p>2-3 человека</p>
+                                <p>Две односпальные кровати, кухня, туалет, душевая, телевизор, Wi-fi</p>
+                                <p>1200 р./ сутки</p>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" id="apparts" />
+                    </div>
+                    <div class="mainInfo">
+                        <p class="infoHeader">Как нам с Вами связаться?</p>
+                        <div class="inputContainer">
+                            <div class="formItem">
+                                <input type="text" placeholder="Ваше имя" />
+                            </div>
+                            <div class="formItem">
+                                <input type="text" placeholder="Номер телефона" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formItem">
+                        <input type="submit" class="bookButton formButton"></input>
+                    </div>
+                </div>
+            </form>
+        </div>
         <div class="parallax">
             <div class="parallax__layer parallax__layer--back">
                 <img src="img/parallax.png" alt="" class="parallax_img">
@@ -25,9 +93,9 @@
                         </div>
                         <nav>
                             <ul>
-                                <li>Цены</li>
-                                <li>Как нас найти</li>
-                                <li>Контакты</li>
+                                <li> <a href="#houses" class="anch">Домики</a></li>
+                                <li> <a href="#prices1" class="anch">Цены</a></li>
+                                <li> <a href="#social" class="anch">Контакты</a></li>
                             </ul>
                         </nav>
                     </header>
@@ -48,43 +116,53 @@
                 </section>
 
                 <section class="fourthSection">
+
                     <div class="house_blocks">
-                        <div class="house">
-                            <img src="img/houses/twofloors.png" alt="">
-                            <div class="house_info">
-                                <h3 class="houseDisciptionTitle">Одноэтажный гостевой домик</h3>
-                                <h6 class="houseDisciptionSubtitle">Удобный домик для небольшой семьи вместимостью 2-3
-                                    человека. Две односпальные кровати, небольшая кухня, туалет и душевая кабинка.</h6>
-                                <button class="bookButton">Проверить актуальность</button>
-                                <button class="lightButton">Цена</button>
+                        <a id="houses">
+                            <div class="house">
+                                <img src="img/houses/twofloors.png" alt="">
+                                <div class="house_info">
+                                    <h3 class="houseDisciptionTitle">Одноэтажный гостевой домик</h3>
+                                    <h6 class="houseDisciptionSubtitle">Удобный домик для небольшой семьи вместимостью
+                                        2-3
+                                        человека. Две односпальные кровати, небольшая кухня, туалет и душевая кабинка.
+                                    </h6>
+                                    <button class="bookButton">Проверить актуальность</button>
+                                    <a href="#prices1" class="anch"><button class="lightButton">Цена</button></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="house">
-                            <img src="img/houses/onefloor.png" alt="">
-                            <div class="house_info">
-                                <h3 class="houseDisciptionTitle">Двухэтажный гостевой домик</h3>
-                                <h6 class="houseDisciptionSubtitle">Гостевой домик с несколькими комнатами, рассчитанный
-                                    на 4-5 человек. Из удобств двуспальная кровать, две односпальные кровати, диван,
-                                    кухня, туалет и душевая.</h6>
-                                <button class="bookButton">Проверить актуальность</button>
-                                <button class="lightButton">Цена</button>
+                            <div class="house">
+                                <img src="img/houses/onefloor.png" alt="">
+                                <div class="house_info">
+                                    <h3 class="houseDisciptionTitle">Двухэтажный гостевой домик</h3>
+                                    <h6 class="houseDisciptionSubtitle">Гостевой домик с несколькими комнатами,
+                                        рассчитанный
+                                        на 4-5 человек. Из удобств двуспальная кровать, две односпальные кровати, диван,
+                                        кухня, туалет и душевая.</h6>
+                                    <button class="bookButton">Проверить актуальность</button>
+                                    <a href="#prices1" class="anch"><button class="lightButton">Цена</button></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="house">
-                            <img src="img/houses/aparts.png" alt="">
-                            <div class="house_info">
-                                <h3 class="houseDisciptionTitle">Аппартаменты</h3>
-                                <h6 class="houseDisciptionSubtitle">Комнаты с односпальными/двуспальными кроватями для
-                                    1-2 человек. </h6>
-                                <button class="bookButton">Проверить актуальность</button>
-                                <button class="lightButton">Цена</button>
+                            <div class="house">
+                                <img src="img/houses/aparts.png" alt="">
+                                <div class="house_info">
+                                    <h3 class="houseDisciptionTitle">Аппартаменты</h3>
+                                    <h6 class="houseDisciptionSubtitle">Комнаты с односпальными/двуспальными кроватями
+                                        для
+                                        1-2 человек. </h6>
+                                    <button class="bookButton">Проверить актуальность</button>
+                                    <a href="#prices1" class="anch"><button class="lightButton">Цена</button></a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
+
                 </section>
 
                 <section class="fifthSection">
-                    <h2>Стоимость проживания</h2>
+                    <a id="prices1">
+                        <h2>Стоимость проживания</h2>
+                    </a>
                     <h3>Цены указаны за сутки проживания (с 10:00 до 14:00 следующего дня)</h3>
 
                     <div class="price_block">
@@ -103,7 +181,7 @@
                             </div>
                             <h4 class="subtitle_block">Сутки - 1700 р.</br>
                                 Неделя - 10000 р.</br>
-                                Свыше двух недель  - сутки 1000 р.</h4>
+                                Свыше двух недель - сутки 1000 р.</h4>
                             <button class="book">Забронировать</button>
                         </div>
                         <div class="price price_third">
@@ -112,28 +190,30 @@
                             </div>
                             <h4 class="subtitle_block apartspad">Сутки - 900 р.</br>
                                 Неделя - 5000 р.</br>
-                                Свыше двух недель  - сутки 450 р.</h4>
+                                Свыше двух недель - сутки 450 р.</h4>
                             <button class="book">Забронировать</button>
                         </div>
                     </div>
                 </section>
                 <footer>
                     <div class="social">
-                        <div class="social_button">
-                            <a href="#">
-                                <img src="img/social/tel.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="social_button">
-                            <a href="#">
-                                <img src="img/social/inst.svg" alt="inst">
-                            </a>
-                        </div>
+                        <a id="social">
                             <div class="social_button">
                                 <a href="#">
-                                    <img src="img/social/teleg.svg" alt="">
+                                    <img src="img/social/tel.svg" alt="tel">
                                 </a>
                             </div>
+                            <div class="social_button">
+                                <a href="#">
+                                    <img src="img/social/inst.svg" alt="inst">
+                                </a>
+                            </div>
+                            <div class="social_button">
+                                <a href="#">
+                                    <img src="img/social/teleg.svg" alt="telegram">
+                                </a>
+                            </div>
+                        </a>
                     </div>
                 </footer>
             </div>
